@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moveus – Moving &amp; Logistics in Sandton</title>
+<meta name="description" content="Flat-rate moving for homes and businesses in Sandton and across Gauteng, with live GPS tracking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="truck" viewBox="0 0 120 80">
+    <g stroke="#1c1c1c" stroke-width="4" stroke-linejoin="round">
+      <rect x="14" y="4" width="54" height="40" rx="3" fill="#e8891d"/>
+      <path d="M14 44h56v16H14z" fill="#2a9d9b"/>
+      <path d="M70 22h22l16 14c3 2 4 4 4 8v16H70z" fill="#2a9d9b"/>
+      <path d="M78 28h12l9 10H78z" fill="#fff"/>
+      <circle cx="34" cy="62" r="11" fill="#fff"/><circle cx="92" cy="62" r="11" fill="#fff"/>
+    </g>
+    <path d="M41 14v20M34 22l7-8 7 8" stroke="#1c1c1c" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g stroke="#2a9d9b" stroke-width="4" stroke-linecap="round"><path d="M2 20h6M0 32h8M2 44h6"/></g>
+  </symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Moveus home"><svg width="44" height="30"><use href="#truck"/></svg>moveus</a>
+    <ul>
+      <li><a class="l" href="#quote">Get a quote</a></li>
+      <li><a class="l" href="#services">Services</a></li>
+      <li><a class="l" href="#how">How it works</a></li>
+      <li><a class="l" href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+27699051503">Call us</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="quote">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1>One price. Your whole move, tracked.</h1>
+        <p class="lede">Moveus moves homes, flats and offices around Sandton and across Gauteng. You get a flat rate up front and a live GPS link on moving day, so nothing is a surprise.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Book a move</a>
+          <a class="btn alt" href="#how">See how it works</a>
+        </div>
+        <div class="road" aria-hidden="true"><svg class="truck" viewBox="0 0 120 80"><use href="#truck"/></svg></div>
+      </div>
+
+      <div class="card" id="estimator">
+        <h2>Estimate your move</h2>
+        <label for="size">What are you moving?</label>
+        <select id="size">
+          <option value="900">Bachelor or studio</option>
+          <option value="1500" selected>1-bedroom flat</option>
+          <option value="2400">2-bedroom home</option>
+          <option value="3600">3-bedroom home</option>
+          <option value="3000">Small office</option>
+        </select>
+        <label for="km">Distance: <span id="kmv">20</span> km</label>
+        <input type="range" id="km" min="5" max="150" value="20">
+        <label class="chk"><input type="checkbox" id="pack"> Add packing help</label>
+        <div class="price" aria-live="polite">
+          <small>Estimated flat rate</small>
+          <strong id="out">R0</strong>
+        </div>
+        <p class="fine">This is a guide only. We confirm your final flat rate before moving day.</p>
+        <p style="margin-top:1rem"><a class="btn" href="#contact" id="book">Book this move</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="features">
+  <div class="wrap">
+    <h2>Built so you always know what’s happening</h2>
+    <div class="feat">
+      <div><h3>Flat-rate pricing</h3><p>We agree one price for homes and businesses before we load. No hourly clock running.</p></div>
+      <div><h3>Live GPS tracking</h3><p>Follow the truck on your phone from pick-up to drop-off.</p></div>
+      <div><h3>Optional packing</h3><p>Pack it yourself or let our team wrap and box everything for you.</p></div>
+      <div><h3>Simple payment</h3><p>Pay after we confirm your quote. We’ll send the details in writing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we move</h2>
+    <p class="lede">From a single room to a full office, with the right truck and enough hands for the job.</p>
+    <div class="svc">
+      <article><h3>Home moves</h3><p>Flats, townhouses and family homes, loaded, driven and set down where you want them.</p></article>
+      <article><h3>Office and business moves</h3><p>Desks, shelving and equipment moved on a schedule that keeps your downtime short.</p></article>
+      <article><h3>Single items and small loads</h3><p>A couch, a fridge or a few boxes. Pay a flat rate for just what needs to go.</p></article>
+      <article><h3>Packing and wrapping</h3><p>Boxes, blankets and wrap for furniture and fragile items, added only when you want it.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="alt-bg">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><div><b>Tell us about your move</b><span>Use the estimator or send us a message with the date, addresses and what’s going.</span></div></li>
+      <li><div><b>Get your flat rate</b><span>We confirm one price in writing, including packing if you want it.</span></div></li>
+      <li><div><b>Move day</b><span>We arrive, load and drive. You get a live GPS link to follow along.</span></div></li>
+      <li><div><b>Settled in</b><span>We unload where you point, and you pay as agreed.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Book your move</h2>
+      <p class="lede">Send your details and we’ll come back with your flat rate.</p>
+      <ul class="info">
+        <li><b>Contact</b>Katlego Diale</li>
+        <li><b>Phone</b><a href="tel:+27699051503">(+27) 69 905 1503</a></li>
+        <li><b>WhatsApp</b><a href="https://wa.me/27699051503">Message us on WhatsApp</a></li>
+        <li><b>Email</b><a href="mailto:moveuslogistics@gmail.com">moveuslogistics@gmail.com</a></li>
+        <li><b>Address</b>10 Leslie Ave, Douglasdale, Sandton, 2191</li>
+      </ul>
+    </div>
+    <form id="form" class="card" novalidate>
+      <div class="row">
+        <div><label for="n">Your name</label><input id="n" type="text" autocomplete="name" required></div>
+        <div><label for="p">Phone number</label><input id="p" type="tel" autocomplete="tel" required></div>
+      </div>
+      <label for="e">Email</label><input id="e" type="email" autocomplete="email">
+      <div class="row">
+        <div><label for="f">Moving from</label><input id="f" type="text" placeholder="Suburb or address"></div>
+        <div><label for="t">Moving to</label><input id="t" type="text" placeholder="Suburb or address"></div>
+      </div>
+      <label for="d">Move date</label><input id="d" type="text" placeholder="e.g. 5 December">
+      <label for="m">Details</label><textarea id="m" rows="4" placeholder="What are you moving? Any stairs or tight access?"></textarea>
+      <p class="fine" id="err" role="alert"></p>
+      <div class="cta">
+        <button class="btn" type="submit" data-via="wa">Send on WhatsApp</button>
+        <button class="btn alt" type="submit" data-via="mail">Send by email</button>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Moveus Logistics. Douglasdale, Sandton.</span>
+    <span>Flat-rate moving with live GPS tracking.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
